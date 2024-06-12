@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -30,4 +30,22 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+.gallery {
+  white-space: nowrap;
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+.gallery div:first-child {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.img-container:hover input[type="checkbox"] {
+  display: block;
 }
